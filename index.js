@@ -7,6 +7,14 @@ let messageEl = document.getElementById('message-el')
 let cardsEl = document.getElementById('cards-el')
 let sumEl = document.getElementById('sum-el')
 let newCardBtn = document.getElementById('new-card-btn')
+let playerEl = document.getElementById('player-el')
+
+let player = {
+    name: 'Daniel',
+    chips: 135
+}
+
+playerEl.textContent = player.name + ":" + " " + "$" + player.chips
 
 function startGame(){
     newCardBtn.style.visibility = 'visible'
