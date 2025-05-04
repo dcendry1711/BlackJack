@@ -44,7 +44,9 @@ function newCard(){
     cardsArray.push(card)
     sum += card
     renderGame()
-    if (sum>21) {
+    if (sum<21 && isAlive === true) {
+        newCardBtn.style.visibility = 'visible'
+    } else {
         newCardBtn.style.visibility = 'hidden'
     }
 }
